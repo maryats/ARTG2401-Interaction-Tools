@@ -14,6 +14,9 @@ body {
   border-color: red;
 }
 
+.background {
+	background-color: #ddd;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
