@@ -1,35 +1,51 @@
+body {
+font-family: 'Open Sans', 'Helvetica', sans-serif;
+}
+
 .container-style {
   padding: 0 20px 0 20px;
 }
 
-.about-me {
+/* ------------------------------- PORTFOLIO ------------------------------- */
+
+.project-caption {
   text-align: center;
-  max-width: 24em;
-  margin-top: 20px;
-}
-.about-img {
-  margin: 50px 0 20px 0;
+  max-width: 60rem;
 }
 
 .top-buffer { 
   margin-top:20px; 
 }
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-.project-caption {
+/* --------------------------------- ABOUT --------------------------------- */
+
+.about-me {
   text-align: center;
+  max-width: 24em;
+  margin-top: 20px;
 }
 
+.about-img {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* ----------------------------- MEDIA QUERIES ----------------------------- */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
+@media (min-width: 768px) {
+	.project-caption {
+		text-align: left;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
+@media (min-width: 992px) {
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {
-
+@media (min-width: 1200px) {
 }
