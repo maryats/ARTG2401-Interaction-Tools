@@ -10,12 +10,16 @@
 .about-img {
   margin: 50px 0 20px 0;
 }
-.img-responsive {
-  margin-bottom: 20px;
+
+.top-buffer { 
+  margin-top:20px; 
 }
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
+.project-caption {
+  text-align: center;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
@@ -23,7 +27,6 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
-
 }
 
 /* Large devices (large desktops, 1200px and up) */
