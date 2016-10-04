@@ -6,6 +6,20 @@ font-family: 'Open Sans', 'Helvetica', sans-serif;
   padding: 0 20px 0 20px;
 }
 
+/* --------------------------------- INDEX --------------------------------- */
+
+.index-sidebar {
+  background: teal;
+}
+
+.index-sidebar h1 {
+  color: white;
+}
+
+.index-sidebar p {
+  color: white;
+}
+
 /* ------------------------------- PORTFOLIO ------------------------------- */
 
 .project-caption {
