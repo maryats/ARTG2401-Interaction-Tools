@@ -9,7 +9,7 @@ font-family: 'Open Sans', 'Helvetica', sans-serif;
 /* ------------------------------- PORTFOLIO ------------------------------- */
 
 .project-caption {
-  text-align: center;
+  text-align: left;
   max-width: 60rem;
 }
 
@@ -30,6 +30,10 @@ font-family: 'Open Sans', 'Helvetica', sans-serif;
   margin-bottom: 20px;
 }
 
+/* -------------------------------- CONTACT -------------------------------- */
+
+
+
 /* ----------------------------- MEDIA QUERIES ----------------------------- */
 
 /* Extra small devices (phones, less than 768px) */
@@ -37,15 +41,16 @@ font-family: 'Open Sans', 'Helvetica', sans-serif;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-	.project-caption {
-		text-align: left;
-	}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .form-container {
+    max-width: 720px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
 }
