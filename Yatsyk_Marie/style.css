@@ -6,6 +6,31 @@ font-family: 'Open Sans', 'Helvetica', sans-serif;
   padding: 0 20px 0 20px;
 }
 
+a {
+  color: #0000CC;
+}
+
+a:visited {
+  color: #0000CC;
+}
+
+a:hover {
+  color: #F00699;
+}
+
+a:active {
+  color: yellow;
+}
+
+/* ------------------------------- NAVIGATION ------------------------------ */
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+
+
 /* --------------------------------- INDEX --------------------------------- */
 
 .index-sidebar {
