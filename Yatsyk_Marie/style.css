@@ -26,10 +26,8 @@ a:active {
 
 .navbar-default {
   background-color: transparent;
-  border: none;
+  border-bottom: dashed 1px #ddd;
 }
-
-
 
 /* --------------------------------- INDEX --------------------------------- */
 
@@ -44,6 +42,47 @@ a:active {
 .top-buffer-10 {
   margin-top: 10px;
 }
+
+.home-bg-img-1 {
+  background-image: url(https://images.unsplash.com/photo-1475665616083-1d5dc90ff8ef?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=3eb7557c637c6ca5e1512d81e3c3b00d);
+  height: 150px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-bg-img-2 {
+  background-image: url(https://hd.unsplash.com/photo-1454991727061-be514eae86f7);
+  height: 150px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-bg-img-3 {
+  background-image: url(https://hd.unsplash.com/photo-1469547371150-47620ed0c5ea);
+  height: 150px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-
+  size: cover;
+}
+.home-bg-img-4 {
+  background-image: url(https://hd.unsplash.com/photo-1472214103451-9374bd1c798e);
+  height: 150px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-bg-img-5 {
+  background-image: url(https://images.unsplash.com/photo-1475656106224-d72c2ab53e8d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=e0bf49d56326ad27c7e0cdf4d586303b);
+  height: 150px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  b
 
 /* ------------------------------- PORTFOLIO ------------------------------- */
 
@@ -60,13 +99,17 @@ a:active {
 
 .about-me {
   text-align: center;
-  max-width: 24em;
+  max-width: 100px;
   margin-top: 20px;
+  border: 2px solid red;
 }
 
-.about-img {
+.about-me-img {
   margin-top: 50px;
   margin-bottom: 20px;
+  max-height: 200px;
+  max-width: 200px;
+  border: 2px solid red;
 }
 
 /* -------------------------------- CONTACT -------------------------------- */
@@ -80,19 +123,7 @@ a:active {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-/*  .navbar-nav {
-    width: 100%;
-    text-align: center;
-  }
-  .navbar-nav > li {
-    float: none;
-    display: inline-block;
-  }
-  .navbar-nav > li.navbar-right {
-    float: right !important;
-  }*/
 }
-/* Thanks, www.bootply.com/CSI2KcCoEM */
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
