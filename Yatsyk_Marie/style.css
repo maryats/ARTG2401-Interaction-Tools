@@ -1,5 +1,6 @@
 body {
-font-family: 'Open Sans', 'Helvetica', sans-serif;
+/*font-family: 'Open Sans', 'Helvetica', sans-serif;*/
+  font-family: 'Source Code Pro', 'Helvetica', monospace;
 }
 
 .container-style {
@@ -22,11 +23,44 @@ a:active {
   color: yellow;
 }
 
+.page-header {
+  margin-top: 100px;
+  font-weight: bold;
+}
+
 /* ------------------------------- NAVIGATION ------------------------------ */
 
 .navbar-default {
-  background-color: transparent;
+  background-color: white;
   border-bottom: dashed 1px #ddd;
+}
+
+.navbar-default .navbar-brand {
+  color: #0000CC;
+  font-weight: bolder;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #F00699;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: yellow;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #0000CC;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #F00699;
+  background-color: transparent
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #0000CC;
+    background-color: transparent;
+    font-weight: bold;
 }
 
 /* --------------------------------- INDEX --------------------------------- */
@@ -101,14 +135,6 @@ a:active {
   text-align: center;
   max-width: 100px;
   margin-top: 20px;
-}
-
-.about-me-img {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  max-height: 200px;
-  max-width: 200px;
-  border: 2px solid red;
 }
 
 /* -------------------------------- CONTACT -------------------------------- */
