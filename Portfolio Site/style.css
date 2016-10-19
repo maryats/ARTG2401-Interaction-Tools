@@ -1,10 +1,23 @@
+
+/* This isn't working, for some reason? */
+/*html {
+  font-size: 90%;
+}*/
+
 body {
-/*font-family: 'Open Sans', 'Helvetica', sans-serif;*/
   font-family: 'Source Code Pro', 'Helvetica', monospace;
 }
 
 .container-style {
   padding: 0 20px 0 20px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-weight: bold;
 }
 
 a {
@@ -78,13 +91,21 @@ a:active {
 }
 
 .home-bg-img-1 {
+  background-image: url(images/hp-image.png);
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+/*.home-bg-img-1 {
   background-image: url(https://images.unsplash.com/photo-1475665616083-1d5dc90ff8ef?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=3eb7557c637c6ca5e1512d81e3c3b00d);
-  height: 150px;
+  height: 800px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+}*/
 .home-bg-img-2 {
   background-image: url(https://hd.unsplash.com/photo-1454991727061-be514eae86f7);
   height: 150px;
@@ -129,12 +150,44 @@ a:active {
   margin-bottom:20px; 
 }
 
+.spacer-col{
+  height:20px;
+  color:transparent;
+}
+
+.code-p1 figure {
+  background-color: #1abc9c;
+}
+
+.code-p1 img {
+  opacity: 1;
+  /*-webkit-transition: .3s ease-in-out;*/
+  transition: .3s ease-in-out;
+}
+.code-p1:hover img {
+  opacity: .5;
+}
+
+/*.design-p1 {
+
+}
+
+.illust-p1 {
+
+}*/
+
+
+
 /* --------------------------------- ABOUT --------------------------------- */
 
 .about-me {
   text-align: center;
   max-width: 100px;
   margin-top: 20px;
+}
+
+.no-border {
+  border-bottom: none;
 }
 
 /* -------------------------------- CONTACT -------------------------------- */
