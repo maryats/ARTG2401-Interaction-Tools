@@ -22,18 +22,20 @@ h2 {
 
 a {
   color: #0000CC;
+  text-decoration: none;
 }
-
 a:visited {
   color: #0000CC;
+  text-decoration: none;
 }
-
 a:hover {
   color: #F00699;
-}
+  text-decoration: none;
 
+}
 a:active {
   color: yellow;
+  text-decoration: none;
 }
 
 .page-header {
@@ -45,7 +47,7 @@ a:active {
 
 .navbar-default {
   background-color: white;
-  border-bottom: dashed 1px #ddd;
+  border: none;
 }
 
 .navbar-default .navbar-brand {
@@ -78,12 +80,17 @@ a:active {
 
 /* --------------------------------- INDEX --------------------------------- */
 
-.index-sidebar {
-  background: #eee;
+.circle {
+  border-radius: 50%;
 }
 
-.height-100p {
-  height: 100%;
+.hp-focus {
+  width: 200px;
+  height: 200px;
+  background: #eee;
+  border: 25px solid #eee;
+  position: relative;
+  z-index: 300;
 }
 
 .top-buffer-10 {
@@ -137,9 +144,15 @@ a:active {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  b
+  }
 
 /* ------------------------------- PORTFOLIO ------------------------------- */
+
+.project:hover {
+  opacity: .5;
+    transition: .3s ease-in-out;
+    filter: blur(3px)
+}
 
 .project-caption {
   text-align: left;
@@ -151,30 +164,19 @@ a:active {
 }
 
 .spacer-col{
-  height:20px;
+  height:10px;
   color:transparent;
 }
 
-.code-p1 figure {
-  background-color: #1abc9c;
+.blue-bg {
+  background-color: #0000CC;
 }
-
-.code-p1 img {
-  opacity: 1;
-  /*-webkit-transition: .3s ease-in-out;*/
-  transition: .3s ease-in-out;
+.pink-bg {
+  background-color: #F00699;
 }
-.code-p1:hover img {
-  opacity: .5;
+.yellow-bg {
+  background-color: yellow;
 }
-
-/*.design-p1 {
-
-}
-
-.illust-p1 {
-
-}*/
 
 
 
@@ -182,7 +184,6 @@ a:active {
 
 .about-me {
   text-align: center;
-  max-width: 100px;
   margin-top: 20px;
 }
 
