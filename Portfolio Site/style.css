@@ -1,4 +1,3 @@
-
 /* This isn't working, for some reason? */
 /*html {
   font-size: 90%;
@@ -7,16 +6,21 @@
 body {
   font-family: 'Source Code Pro', 'Helvetica', monospace;
 }
+.pattern {
+  background: #fff url(images/hp-image.png) repeat fixed center;
+}
 
 .container-style {
   padding: 0 20px 0 20px;
 }
 
 h1 {
+  /*font-family: 'Press Start 2P', 'Source Code Pro', 'Helvetica', monospace;*/
   font-size: 3rem;
+  font-weight: bolder;
 }
-
 h2 {
+  /*font-family: 'Press Start 2P', 'Source Code Pro', 'Helvetica', monospace;*/
   font-weight: bold;
 }
 
@@ -38,9 +42,31 @@ a:active {
   text-decoration: none;
 }
 
+.blockquote {
+  font-size: 1.4rem;
+}
+
 .page-header {
   margin-top: 100px;
   font-weight: bold;
+}
+
+/* ----------------------- SITE-WIDE HELPER CLASSES ------------------------ */
+
+.circle {
+  border-radius: 50%;
+}
+
+.no-border {
+  border-bottom: none;
+}
+
+.top-buffer-10 {
+  margin-top: 10px;
+}
+
+.bottom-buffer-20 { 
+  margin-bottom:20px; 
 }
 
 /* ------------------------------- NAVIGATION ------------------------------ */
@@ -49,30 +75,26 @@ a:active {
   background-color: white;
   border: none;
 }
-
 .navbar-default .navbar-brand {
   color: #0000CC;
   font-weight: bolder;
 }
-
 .navbar-default .navbar-brand:hover {
   color: #F00699;
 }
-
-.navbar-default .navbar-nav > li > a:focus {
-  color: yellow;
-}
-
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
   color: #0000CC;
 }
-
 .navbar-default .navbar-nav > li > a:hover {
   color: #F00699;
   background-color: transparent
 }
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav > li > a:focus {
+  color: yellow;
+}
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
     color: #0000CC;
     background-color: transparent;
     font-weight: bold;
@@ -80,78 +102,32 @@ a:active {
 
 /* --------------------------------- INDEX --------------------------------- */
 
-.circle {
-  border-radius: 50%;
-}
-
 .hp-focus {
-  width: 200px;
-  height: 200px;
-  background: #eee;
-  border: 25px solid #eee;
-  position: relative;
+  width: 180px;
+  height: 180px;
+  background: #fff;
+  border: 20px solid #fff;
+  margin: -90px 0 0 -90px;
+  position: fixed;
+  left: 50%;
+  top: 50vh;
   z-index: 300;
+  transition: all .3s ease-in-out;
 }
 
-.top-buffer-10 {
-  margin-top: 10px;
+.hp-focus:hover {
+  box-shadow: 0 0 0 10px #0000CC, 0 0 0 20px #F00699,0 0 0 30px yellow;
 }
-
-.home-bg-img-1 {
-  background-image: url(images/hp-image.png);
-  height: 700px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: repeat;
-}
-
-/*.home-bg-img-1 {
-  background-image: url(https://images.unsplash.com/photo-1475665616083-1d5dc90ff8ef?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=3eb7557c637c6ca5e1512d81e3c3b00d);
-  height: 800px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
-.home-bg-img-2 {
-  background-image: url(https://hd.unsplash.com/photo-1454991727061-be514eae86f7);
-  height: 150px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.home-bg-img-3 {
-  background-image: url(https://hd.unsplash.com/photo-1469547371150-47620ed0c5ea);
-  height: 150px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-
-  size: cover;
-}
-.home-bg-img-4 {
-  background-image: url(https://hd.unsplash.com/photo-1472214103451-9374bd1c798e);
-  height: 150px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.home-bg-img-5 {
-  background-image: url(https://images.unsplash.com/photo-1475656106224-d72c2ab53e8d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=e0bf49d56326ad27c7e0cdf4d586303b);
-  height: 150px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  }
 
 /* ------------------------------- PORTFOLIO ------------------------------- */
 
+.project {
+  border-radius: 50%;
+  transition: all .3s ease-in-out;
+}
 .project:hover {
   opacity: .5;
-    transition: .3s ease-in-out;
-    filter: blur(3px)
+  filter: blur(3px)
 }
 
 .project-caption {
@@ -159,36 +135,24 @@ a:active {
   max-width: 60rem;
 }
 
-.top-buffer-20 { 
-  margin-bottom:20px; 
-}
-
-.spacer-col{
-  height:10px;
-  color:transparent;
-}
-
 .blue-bg {
+  border-radius: 50%;
   background-color: #0000CC;
 }
 .pink-bg {
+  border-radius: 50%;
   background-color: #F00699;
 }
 .yellow-bg {
+  border-radius: 50%;
   background-color: yellow;
 }
-
-
 
 /* --------------------------------- ABOUT --------------------------------- */
 
 .about-me {
   text-align: center;
   margin-top: 20px;
-}
-
-.no-border {
-  border-bottom: none;
 }
 
 /* -------------------------------- CONTACT -------------------------------- */
