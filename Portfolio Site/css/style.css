@@ -175,6 +175,9 @@ a:active {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .hamburger {
+    display: none !important;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
