@@ -1,13 +1,8 @@
-/* This isn't working, for some reason? */
-/*html {
-  font-size: 90%;
-}*/
-
 body {
   font-family: 'Source Code Pro', 'Helvetica', monospace;
 }
 .pattern {
-  background: #fff url(images/hp-image.png) repeat fixed center;
+  background: #fff url(../images/hp-image.png) repeat fixed center;
 }
 
 .container-style {
@@ -15,13 +10,14 @@ body {
 }
 
 h1 {
-  /*font-family: 'Press Start 2P', 'Source Code Pro', 'Helvetica', monospace;*/
-  font-size: 3rem;
-  font-weight: bolder;
+  font-family: 'Press Start 2P', 'Source Code Pro', 'Helvetica', monospace;
+  font-size: 2.5rem;
 }
-h2 {
-  /*font-family: 'Press Start 2P', 'Source Code Pro', 'Helvetica', monospace;*/
-  font-weight: bold;
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.6rem;
 }
 
 a {
@@ -35,11 +31,15 @@ a:visited {
 a:hover {
   color: #F00699;
   text-decoration: none;
-
 }
 a:active {
   color: yellow;
   text-decoration: none;
+}
+
+/* only actually removes focus outline from mobile menu button*/
+:focus {
+  outline: 0;
 }
 
 .blockquote {
@@ -48,10 +48,16 @@ a:active {
 
 .page-header {
   margin-top: 100px;
-  font-weight: bold;
+  font-weight: normal;
+  border-bottom: 1px solid #d6d6ff;
+  border-bottom: 1px solid rgba(0, 0, 204, .09);
 }
-
-/* ----------------------- SITE-WIDE HELPER CLASSES ------------------------ */
+.page-sub-header {
+  margin: 40px 0 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #fee1f4;
+  border-bottom: 1px solid rgba(240, 6, 153, 0.09);
+}
 
 .circle {
   border-radius: 50%;
@@ -64,7 +70,9 @@ a:active {
 .top-buffer-10 {
   margin-top: 10px;
 }
-
+.top-buffer-32 {
+  margin-top: 32px;
+}
 .bottom-buffer-20 { 
   margin-bottom:20px; 
 }
@@ -114,7 +122,6 @@ a:active {
   z-index: 300;
   transition: all .3s ease-in-out;
 }
-
 .hp-focus:hover {
   box-shadow: 0 0 0 10px #0000CC, 0 0 0 20px #F00699,0 0 0 30px yellow;
 }
@@ -127,12 +134,7 @@ a:active {
 }
 .project:hover {
   opacity: .5;
-  filter: blur(3px)
-}
-
-.project-caption {
-  text-align: left;
-  max-width: 60rem;
+  filter: blur(3px);
 }
 
 .blue-bg {
@@ -148,25 +150,63 @@ a:active {
   background-color: yellow;
 }
 
+.project-caption {
+  text-align: left;
+  max-width: 60rem;
+}
+
 /* --------------------------------- ABOUT --------------------------------- */
 
 .about-me {
   text-align: center;
   margin-top: 20px;
-  border
 }
 
 .hover-effect {
   transition: all .3s ease-in-out;  
 }
-
 .hover-effect:hover {
     box-shadow: 0 0 0 10px #0000CC, 0 0 0 20px #F00699,0 0 0 30px yellow;
 }
 
 /* -------------------------------- CONTACT -------------------------------- */
 
+.btn {
+  background: #0000CC;
+  color: white;
+}
 
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  background: #F00699;
+  color: white;
+  text-decoration: none;
+}
+.btn:active {
+  background: yellow;
+  box-shadow: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.form-control {
+  border: 1px solid #0000CC;
+}
+.form-control:focus {
+  border: 1px solid #F00699;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 3px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 3px 3px rgba(0, 0, 0, .075);
+}
 
 /* ----------------------------- MEDIA QUERIES ----------------------------- */
 
