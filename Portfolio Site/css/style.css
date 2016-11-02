@@ -1,0 +1,233 @@
+body {
+  font-family: 'Source Code Pro', 'Helvetica', monospace;
+}
+.pattern {
+  background: #fff url(../images/hp-image.png) repeat fixed center;
+}
+
+.container-style {
+  padding: 0 20px 0 20px;
+}
+
+h1 {
+  font-family: 'Press Start 2P', 'Source Code Pro', 'Helvetica', monospace;
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.6rem;
+}
+
+a {
+  color: #0000CC;
+  text-decoration: none;
+}
+a:visited {
+  color: #0000CC;
+  text-decoration: none;
+}
+a:hover {
+  color: #F00699;
+  text-decoration: none;
+}
+a:active {
+  color: yellow;
+  text-decoration: none;
+}
+
+/* only actually removes focus outline from mobile menu button*/
+:focus {
+  outline: 0;
+}
+
+.blockquote {
+  font-size: 1.4rem;
+}
+
+.page-header {
+  margin-top: 100px;
+  font-weight: normal;
+  border-bottom: 1px solid #d6d6ff;
+  border-bottom: 1px solid rgba(0, 0, 204, .09);
+}
+.page-sub-header {
+  margin: 40px 0 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #fee1f4;
+  border-bottom: 1px solid rgba(240, 6, 153, 0.09);
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.no-border {
+  border-bottom: none;
+}
+
+.top-buffer-10 {
+  margin-top: 10px;
+}
+.top-buffer-32 {
+  margin-top: 32px;
+}
+.bottom-buffer-20 { 
+  margin-bottom:20px; 
+}
+
+/* ------------------------------- NAVIGATION ------------------------------ */
+
+.navbar-default {
+  background-color: white;
+  border: none;
+}
+.navbar-default .navbar-brand {
+  color: #0000CC;
+  font-weight: bolder;
+}
+.navbar-default .navbar-brand:hover {
+  color: #F00699;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #0000CC;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #F00699;
+  background-color: transparent
+}
+.navbar-default .navbar-nav > li > a:focus {
+  color: yellow;
+}
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #0000CC;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+/* --------------------------------- INDEX --------------------------------- */
+
+.hp-focus {
+  width: 180px;
+  height: 180px;
+  background: #fff;
+  border: 20px solid #fff;
+  margin: -90px 0 0 -90px;
+  position: fixed;
+  left: 50%;
+  top: 50vh;
+  z-index: 300;
+  transition: all .3s ease-in-out;
+}
+.hp-focus:hover {
+  box-shadow: 0 0 0 10px #0000CC, 0 0 0 20px #F00699,0 0 0 30px yellow;
+}
+
+/* ------------------------------- PORTFOLIO ------------------------------- */
+
+.project {
+  border-radius: 50%;
+  transition: all .3s ease-in-out;
+}
+.project:hover {
+  opacity: .5;
+  filter: blur(3px);
+}
+
+.blue-bg {
+  border-radius: 50%;
+  background-color: #0000CC;
+}
+.pink-bg {
+  border-radius: 50%;
+  background-color: #F00699;
+}
+.yellow-bg {
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.project-caption {
+  text-align: left;
+  max-width: 60rem;
+}
+
+/* --------------------------------- ABOUT --------------------------------- */
+
+.about-me {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hover-effect {
+  transition: all .3s ease-in-out;  
+}
+.hover-effect:hover {
+    box-shadow: 0 0 0 10px #0000CC, 0 0 0 20px #F00699,0 0 0 30px yellow;
+}
+
+/* -------------------------------- CONTACT -------------------------------- */
+
+.btn {
+  background: #0000CC;
+  color: white;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  background: #F00699;
+  color: white;
+  text-decoration: none;
+}
+.btn:active {
+  background: yellow;
+  box-shadow: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.form-control {
+  border: 1px solid #0000CC;
+}
+.form-control:focus {
+  border: 1px solid #F00699;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 3px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 3px 3px rgba(0, 0, 0, .075);
+}
+
+/* ----------------------------- MEDIA QUERIES ----------------------------- */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none !important;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .form-container {
+    max-width: 720px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
