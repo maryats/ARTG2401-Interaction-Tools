@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- 
+
 <html lang="en">
 
 <head>
@@ -53,41 +53,43 @@
   </div>
 </nav>
 
-<div class="container">
-  <h1 class="page-header">CONTACT ME</h1>
-  <p class="lead">Questions? Shoot me an email.</p>
-  <div class="form-container">
-    <form>
-      <div class="form-group">
-        <label for="InputName">Name</label>
-        <input type="text" class="form-control" id="InputName" placeholder="Your Name">
+<div class="container text-center">
+  <h1 class="page-header text-center no-border">CONTACT ME</h1>
+  <h3 class="page-sub-header no-border">Questions? Shoot me an email.</h3>
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+      <form method="POST" action="http://formspree.io/marie.yatsyk@gmail.com">
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" placeholder="Your email">
         </div>
-      <div class="form-group">
-        <label for="InputEmail">Email address</label>
-        <input type="email" class="form-control" id="InputEmail" placeholder="Your Email">
-      </div>
-      <div class="form-group">
-        <label for="EmailMessage">Message</label>
-        <textarea class="form-control" rows="3" placeholder="Text"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn"><strong>Send</strong></button>
-      </div>
-    </form>
-  </div><!--/.form-container -->
+        <div class="form-group">
+          <textarea name="message" class="form-control" placeholder="Your message" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <input type="hidden" name="_subject" value="GitHub Contact Form Submisison"/>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="_gotcha" style="display:none" />
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn">Send</button>
+        </div>
+      </form>
+    </div><!--/.form-container -->
+  </div>
 </div>
 
-  <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Toggle Hamburger with jQuery -->
-    <script>
-      var $hamburger = $(".hamburger");
-      $hamburger.on("click", function(e) {
-        $hamburger.toggleClass("is-active");
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Toggle Hamburger with jQuery -->
+<script>
+  var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
       // Do something else, like open/close menu
-      });
-    </script>
+    });
+  </script>
 </body>
 </html>
