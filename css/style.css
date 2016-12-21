@@ -154,6 +154,10 @@ a:active {
   text-align: left;
   max-width: 60rem;
 }
+canvas { 
+  max-height: 90vw;
+  max-width: 100%;
+}
 
 /* --------------------------------- ABOUT --------------------------------- */
 
