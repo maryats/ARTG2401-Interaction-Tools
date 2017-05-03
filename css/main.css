@@ -1,0 +1,33 @@
+/*
+Error: Invalid CSS after "body ": expected selector or at-rule, was "{"
+        on line 3 of /Users/marieyatsyk/Documents/College/Class/Interaction Tools/Bootstrap-Portfolio-Site/css/scss/main.scss
+
+1: @import "/variables"
+2: 
+3: body {
+4: font-family: 'Source Code Pro', 'Helvetica', monospace;
+5: }
+6: .pattern {
+7: background: #fff url(../images/hp-image.png) repeat fixed center;
+8: }
+
+Backtrace:
+/Users/marieyatsyk/Documents/College/Class/Interaction Tools/Bootstrap-Portfolio-Site/css/scss/main.scss:3
+/private/var/folders/kw/01ym_tvd0pn101xm7q3041dm0000gn/T/.com.koala-app.koala.CXe3Va/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+/private/var/folders/kw/01ym_tvd0pn101xm7q3041dm0000gn/T/.com.koala-app.koala.CXe3Va/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+/private/var/folders/kw/01ym_tvd0pn101xm7q3041dm0000gn/T/.com.koala-app.koala.CXe3Va/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:42:in `parse'
+/private/var/folders/kw/01ym_tvd0pn101xm7q3041dm0000gn/T/.com.koala-app.koala.CXe3Va/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+/private/var/folders/kw/01ym_tvd0pn101xm7q3041dm0000gn/T/.com.koala-app.koala.CXe3Va/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/private/var/folders/kw/01ym_tvd0pn101xm7q3041dm0000gn/T/.com.koala-app.koala.CXe3Va/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/private/var/folders/kw/01ym_tvd0pn101xm7q3041dm0000gn/T/.com.koala-app.koala.CXe3Va/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+/private/var/folders/kw/01ym_tvd0pn101xm7q3041dm0000gn/T/.com.koala-app.koala.CXe3Va/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/private/var/folders/kw/01ym_tvd0pn101xm7q3041dm0000gn/T/.com.koala-app.koala.CXe3Va/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/private/var/folders/kw/01ym_tvd0pn101xm7q3041dm0000gn/T/.com.koala-app.koala.CXe3Va/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/private/var/folders/kw/01ym_tvd0pn101xm7q3041dm0000gn/T/.com.koala-app.koala.CXe3Va/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+/private/var/folders/kw/01ym_tvd0pn101xm7q3041dm0000gn/T/.com.koala-app.koala.CXe3Va/bin/sass:18:in `load'
+/private/var/folders/kw/01ym_tvd0pn101xm7q3041dm0000gn/T/.com.koala-app.koala.CXe3Va/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"body \": expected selector or at-rule, was \"{\"\A         on line 3 of /Users/marieyatsyk/Documents/College/Class/Interaction Tools/Bootstrap-Portfolio-Site/css/scss/main.scss\A \A 1: @import \"/variables\"\A 2: \A 3: body {\A 4: font-family: 'Source Code Pro', 'Helvetica', monospace;\A 5: }\A 6: .pattern {\A 7: background: #fff url(../images/hp-image.png) repeat fixed center;\A 8: }"; }

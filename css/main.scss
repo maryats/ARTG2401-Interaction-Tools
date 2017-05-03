@@ -1,0 +1,227 @@
+@import "variables";
+@import "mixins";
+
+body {
+	font-family: 'Source Code Pro', 'Helvetica', monospace;
+}
+
+canvas { 
+	max-height: 90vw;
+	max-width: 100%;
+}
+
+h1 {
+	font-family: 'Press Start 2P', 'Source Code Pro', 'Helvetica', monospace;
+	font-size: 2.5rem;
+}
+h3 {
+	font-size: 2rem;
+}
+h4 {
+	font-size: 1.6rem;
+}
+
+a {
+	color: $main-blue;
+	text-decoration: none;
+
+	&:visited {
+		color: $main-blue;
+	}
+	
+	&:hover {
+		color: $main-pink;
+		text-decoration: none;
+	}
+	
+	&:active {
+		color: $main-yellow;
+		text-decoration: none;
+	}
+}
+
+.page-header {
+	margin-top: 100px;
+	font-weight: normal;
+	border-bottom: 1px solid #d6d6ff;
+	border-bottom: 1px solid rgba(0, 0, 204, .09);
+}
+
+.page-sub-header {
+	margin: 40px 0 20px;
+	padding-bottom: 9px;
+	border-bottom: 1px solid #fee1f4;
+	border-bottom: 1px solid rgba(240, 6, 153, 0.09);
+}
+
+/* only actually removes focus outline from mobile menu button*/
+:focus {
+	outline: 0;
+}
+
+.blockquote {
+	font-size: 1.4rem;
+}
+
+%circle {
+	border-radius: 50%;
+}
+
+.no-border {
+	border-bottom: none;
+}
+
+.top-buffer-10 {
+	margin-top: 10px;
+}
+
+.top-buffer-32 {
+	margin-top: 32px;
+}
+
+.bottom-buffer-20 { 
+	margin-bottom:20px; 
+}
+
+/* ------------------------------- NAVIGATION ------------------------------ */
+.navbar-default {
+	background-color: white;
+	border: none;
+
+	.navbar-brand {
+		color: $main-blue;
+		font-weight: bolder;
+		&:hover {
+			color: $main-pink;
+		}
+	}
+
+	.navbar-nav > li > a {
+		color: $main-blue;
+		&:hover {
+			color: $main-pink;
+			background-color: transparent;
+		}
+		&:focus {
+			color: $main-yellow;
+		}
+	}
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover {
+	color: $main-blue;
+	background-color: transparent;
+	font-weight: bold;
+}
+
+/* --------------------------------- INDEX --------------------------------- */
+
+.pattern {
+	background: #fff url(../images/hp-image.png) repeat fixed center;
+}
+
+.hp-focus {
+	@extend %circle;
+	width: 180px;
+	height: 180px;
+	background: #fff;
+	border: 20px solid #fff;
+	margin: -90px 0 0 -90px;
+	position: fixed;
+	left: 50%;
+	top: 50vh;
+	z-index: 300;
+}
+
+/* ------------------------------- PORTFOLIO ------------------------------- */
+
+.container-style {
+	padding: 0 20px 0 20px;
+}
+
+.project {
+	@extend %circle;
+	@include transition-speed;
+	&:hover {
+		opacity: .5;
+		filter: blur(3px);
+	}
+}
+
+.blue-bg {
+	@extend %circle;
+	background-color: $main-blue;
+}
+.pink-bg {
+	@extend %circle;
+	background-color: $main-pink;
+}
+.yellow-bg {
+	@extend %circle;
+	background-color: $main-yellow;
+}
+
+.project-caption {
+	text-align: left;
+	max-width: 60rem;
+}
+
+/* --------------------------------- ABOUT --------------------------------- */
+
+.about-me {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.hover-effect {
+	@include hover-stripes;
+}
+
+/* -------------------------------- CONTACT -------------------------------- */
+
+.btn {
+	background: $main-blue;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		background: $main-pink;
+		color: white;
+		outline: none;
+	}
+	&:active,
+	&:active:focus {
+		background: $main-yellow;
+		box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+		-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+	}
+}
+
+.form-control {
+	border: 1px solid $main-blue;
+	&:focus {
+		border: 1px solid $main-pink;
+		outline: 0;
+		box-shadow: inset 0 3px 3px rgba(0, 0, 0, .075);
+		-webkit-box-shadow: inset 0 3px 3px rgba(0, 0, 0, .075);
+	}
+}
+
+/* ----------------------------- MEDIA QUERIES ----------------------------- */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.hamburger {
+		display: none !important;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.form-container {
+		max-width: 720px;
+	}
+}

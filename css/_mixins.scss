@@ -1,0 +1,18 @@
+@mixin transition-speed($seconds: .3s) {
+	transition: all #{$seconds} ease-in-out;  
+}
+
+@mixin circle {
+	border-radius: 50%;
+}
+
+@mixin project($color) {
+	@include circle;
+}
+
+@mixin hover-stripes {
+	@include transition-speed;
+	&:hover {
+		box-shadow: 0 0 0 10px $main-blue, 0 0 0 20px $main-pink,0 0 0 30px $main-yellow;
+	}
+}
